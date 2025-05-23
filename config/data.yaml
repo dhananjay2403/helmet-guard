@@ -1,9 +1,12 @@
 # This file tells YOLOv8 where to find your dataset & what classes it’s detecting
 
-# Data path
-path: datasets/helmet_data
-train: images/train
-val: images/val
+# Train images
+train: /Users/dhananjaytiwari/Desktop/Programming/CODING/PROJECTS/helmet-guard/datasets/helmet_data/images/train
+# Validation images
+val: /Users/dhananjaytiwari/Desktop/Programming/CODING/PROJECTS/helmet-guard/datasets/helmet_data/images/val
 
-names:
-  0: helmet
+# Number of classes
+nc: 3
+
+# Class names
+names: ["helmet", "vest", "head"]
