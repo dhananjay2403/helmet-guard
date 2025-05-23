@@ -11,6 +11,7 @@ HelmetGuard uses computer vision and deep learning (YOLOv8) to identify safety v
 ### Video Detection
 
 ![Helmet Detection Demo](results/helmet_detection_video1/test_video_gif.gif)
+
 The demo above shows the YOLOv8 model detecting safety equipment in construction site footage
 
 ### Image Detection
@@ -103,3 +104,19 @@ Due to file size limitations, these videos are not included in the GitHub reposi
 3. Or use your own videos showing people with/without hardhats
 
 When using Pexels content, please respect their [license terms](https://www.pexels.com/license/).
+
+## Extended Applications
+
+While HelmetGuard is currently focused on construction site safety, the core technology can be adapted for various safety and compliance monitoring applications:
+
+### Road Safety
+- **Motorcycle Helmet Detection**: Monitor compliance with helmet laws for motorcyclists at traffic intersections
+- **Bicycle Safety Gear**: Identify cyclists without proper safety equipment in urban areas
+- **Traffic Violation Monitoring**: Create automated systems to detect various traffic safety violations
+
+### Other Safety Applications
+- **Industrial Compliance**: Adapt for different industrial settings requiring specialized PPE
+- **License Plate Recognition**: Modify the detection system to identify and log vehicle license plates
+- **Crowd Safety Analysis**: Monitor proper safety protocols in large public gatherings
+
+The YOLOv8 architecture used in this project provides a flexible foundation that can be retrained on different datasets to address these varied safety challenges with minimal code changes.
