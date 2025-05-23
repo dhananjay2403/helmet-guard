@@ -1,20 +1,20 @@
 # Helmet-guard
 
-An AI-powered safety monitoring system that detects whether construction workers are wearing proper safety equipment (helmets and vests).
+HelmetGuard is an AI-driven safety sentinel for construction sites, harnessing the power of computer vision and YOLOv8 deep learning to automatically spot workers missing critical protective gear like helmets and vests. By transforming ordinary site footage into actionable safety insights, HelmetGuard helps create smarter, safer workplaces—one frame at a time.
 
-## Overview
+## 🚀 Detection Results
 
-HelmetGuard uses computer vision and deep learning (YOLOv8) to identify safety violations in construction sites by detecting workers who are not wearing appropriate safety gear.
-
-## Detection Results
-
-### 1. Video Detection
+### 🎥 Video Demo
 
 ![Helmet Detection Demo](results/helmet_detection_video1/test_video_gif.gif)
 
-The demo above shows the YOLOv8 model detecting safety equipment in construction site footage
+<p align="center"><i>
+Watch HelmetGuard in action as it scans construction site footage, instantly highlighting workers with and without safety gear!
+</i></p>
 
-### 2. Image Detection
+---
+
+### 🖼️ Image Detection Demo
 
 <div align="center">
   <img src="results/helmet_detection_image/test_image.jpg" width="32.6%" />
@@ -22,7 +22,30 @@ The demo above shows the YOLOv8 model detecting safety equipment in construction
   <img src="results/helmet_detection_image4/002098.jpg" width="32.6%" />
 </div>
 
-These images show detection of safety equipment on static construction site photos
+<p align="center"><i>
+HelmetGuard accurately detects helmets and vests in static images—making safety compliance visible, frame by frame.
+</i></p>
+
+---
+
+<div align="center">
+
+## Model Performance
+
+</div>
+
+![Training Metrics](runs/detect/full_training/metrics.png)
+
+**Key Results after 25 Training Epochs:**
+
+| Metric        | Value      | Description                                      |
+|:-------------:|:----------:|:-------------------------------------------------|
+| 🎯 **Precision** <br> (Helmet Detection) | **91.6%**   | High reliability of positive detections           |
+| 🔎 **Recall** <br> (Head Detection)     | **90.5%**   | Strong ability to find relevant objects           |
+| 🏆 **mAP@0.5**                          | **89.3%**   | Robust overall detection capability               |
+| 📊 **mAP@0.5:0.95**                     | **76.7%**   | Good localization accuracy across IoU thresholds  |
+
+> These results confirm HelmetGuard’s effectiveness for construction site safety monitoring, with particularly strong performance in detecting safety-critical equipment like helmets.
 
 ## Installation Guide
 
@@ -67,36 +90,55 @@ cd scripts
 python detect_video.py
 ```
 
-## Dataset
+## 📊 Dataset
 
-This project uses the "Hardhat + Vests" dataset from Kaggle.
+This project uses the **"Hardhat + Vests"** dataset from Kaggle.
 
-To run this project:
+<a href="https://www.kaggle.com/datasets/muhammetzahitaydn/hardhat-vest-dataset-v3?resource=download">
+  <img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?style=for-the-badge&logo=kaggle" alt="Kaggle Dataset"/>
+</a>
 
-1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/muhammetzahitaydn/hardhat-vest-dataset-v3?resource=download)
-2. Extract the contents to the `datasets/helmet_data` directory
-3. Ensure the directory structure matches what's specified in `config/data.yaml`
+### Setup Instructions:
 
+1. **Download** the dataset from Kaggle
+2. **Extract** contents to the `datasets/helmet_data` directory
+3. **Verify** directory structure matches `config/data.yaml`
 
-## Test Videos
+## 🎬 Test Videos
 
-This project uses free stock videos from [Pexels](https://www.pexels.com/) for testing and demonstration purposes.
+<a href="https://www.pexels.com/search/videos/construction%20workers/">
+  <img src="https://img.shields.io/badge/Pexels-Videos-05A081?style=for-the-badge&logo=pexels" alt="Pexels Videos"/>
+</a>
 
-When using Pexels content, please respect their [license terms](https://www.pexels.com/license/).
+This project uses free stock videos from Pexels for testing and demonstration purposes.  
 
+Please respect their [license terms](https://www.pexels.com/license/) when using this content.
 
-## Extended Applications
+## 🔍 Extended Applications
 
-While HelmetGuard is currently focused on construction site safety, the core technology can be adapted for various safety and compliance monitoring applications:
+<table>
+  <tr>
+    <td width="50%" align="center"><h3>🛣️ Road Safety</h3></td>
+    <td width="50%" align="center"><h3>🏭 Other Safety Applications</h3></td>
+  </tr>
+  <tr valign="top">
+    <td>
+      <ul>
+        <li><b>🏍️ Motorcycle Helmet Detection</b>: Monitor compliance with helmet laws</li>
+        <li><b>🚲 Bicycle Safety Gear</b>: Identify cyclists without proper equipment</li>
+        <li><b>🚦 Traffic Violation Monitoring</b>: Create automated detection systems</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><b>🦺 Industrial Compliance</b>: Adapt for different PPE requirements</li>
+        <li><b>🚗 License Plate Recognition</b>: Identify and log vehicle plates</li>
+        <li><b>👥 Crowd Safety Analysis</b>: Monitor protocols in public gatherings</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-### Road Safety
-- **Motorcycle Helmet Detection**: Monitor compliance with helmet laws for motorcyclists at traffic intersections
-- **Bicycle Safety Gear**: Identify cyclists without proper safety equipment in urban areas
-- **Traffic Violation Monitoring**: Create automated systems to detect various traffic safety violations
-
-### Other Safety Applications
-- **Industrial Compliance**: Adapt for different industrial settings requiring specialized PPE
-- **License Plate Recognition**: Modify the detection system to identify and log vehicle license plates
-- **Crowd Safety Analysis**: Monitor proper safety protocols in large public gatherings
-
-The YOLOv8 architecture used in this project provides a flexible foundation that can be retrained on different datasets to address these varied safety challenges with minimal code changes.
+<div align="center">
+  <i>The YOLOv8 architecture provides a flexible foundation that can be retrained on different datasets to address these varied safety challenges with minimal code changes.</i>
+</div>
