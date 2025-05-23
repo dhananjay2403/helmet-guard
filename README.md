@@ -15,9 +15,11 @@ The demo above shows the YOLOv8 model detecting safety equipment in construction
 
 ### Image Detection
 
-![Helmet Detection on Image 1](results/helmet_detection_image/test_image.jpg)
-![Helmet Detection on Image 2](results/helmet_detection_image3/001766.jpg)
-![Helmet Detection on Image 3](results/helmet_detection_image4/002098.jpg)
+<div align="center">
+  <img src="results/helmet_detection_image/test_image.jpg" width="32.6%" />
+  <img src="results/helmet_detection_image3/001766.jpg" width="32.6%" /> 
+  <img src="results/helmet_detection_image4/002098.jpg" width="32.6%" />
+</div>
 
 These images show detection of safety equipment on static construction site photos
 
@@ -60,6 +62,34 @@ To run detection on a video:
 ```bash
 cd scripts
 python detect_video.py
+```
+
+## Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/yourusername/helmet-guard.git
+cd helmet-guard
+
+# Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
+```
+
+The requirements.txt file contains all necessary Python packages for this project:
+
+- ultralytics (for YOLOv8)
+- torch (PyTorch)
+- opencv-python (OpenCV)
+- And their dependencies
+
+If you encounter issues with the installation, you can install the core dependencies manually:
+
+```bash
+pip install ultralytics opencv-python torch torchvision
 ```
 
 ## Test Videos
