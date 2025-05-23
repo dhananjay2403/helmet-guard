@@ -6,11 +6,20 @@ An AI-powered safety monitoring system that detects whether construction workers
 
 HelmetGuard uses computer vision and deep learning (YOLOv8) to identify safety violations in construction sites by detecting workers who are not wearing appropriate safety gear.
 
-### Helmet Detection Demo
+## Detection Results
 
-![Helmet Detection Demo](helmet_detection_video1/test_video_gif.gif)
+### Video Detection
 
-The demo above shows the YOLOv8 model detecting safety equipment (helmets and vests) in construction site footage*
+![Helmet Detection Demo](results/helmet_detection_video1/test_video_gif.gif)
+The demo above shows the YOLOv8 model detecting safety equipment in construction site footage
+
+### Image Detection
+
+![Helmet Detection on Image 1](results/helmet_detection_image/test_image.jpg)
+![Helmet Detection on Image 2](results/helmet_detection_image3/001766.jpg)
+![Helmet Detection on Image 3](results/helmet_detection_image4/002098.jpg)
+
+These images show detection of safety equipment on static construction site photos
 
 ## Installation
 
