@@ -19,3 +19,13 @@ build/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+# Dataset files
+datasets/
+datasets/helmet_data/
+
+# Videos Folder 
+videos/
+
+# macOS specific files
+.DS_Store
