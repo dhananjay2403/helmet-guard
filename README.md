@@ -1,6 +1,10 @@
 # Helmet-guard
 
-HelmetGuard is an AI-driven safety sentinel for construction sites, harnessing the power of computer vision and YOLOv8 deep learning to automatically spot workers missing critical protective gear like helmets and vests. By transforming ordinary site footage into actionable safety insights, HelmetGuard helps create smarter, safer workplaces—one frame at a time.
+HelmetGuard is an AI-driven safety sentinel for construction sites, harnessing the power of computer vision and YOLOv8 deep learning to automatically spot workers missing critical protective gear like helmets and vests. 
+
+By transforming ordinary site footage into actionable safety insights, HelmetGuard helps create smarter, safer workplaces—one frame at a time.
+
+---
 
 ## 🚀 Detection Results
 
@@ -12,7 +16,7 @@ HelmetGuard is an AI-driven safety sentinel for construction sites, harnessing t
 Watch HelmetGuard in action as it scans construction site footage, instantly highlighting workers with and without safety gear!
 </i></p>
 
----
+<br>
 
 ### 🖼️ Image Detection Demo
 
@@ -47,6 +51,8 @@ HelmetGuard accurately detects helmets and vests in static images—making safet
 
 > These results confirm HelmetGuard’s effectiveness for construction site safety monitoring, with particularly strong performance in detecting safety-critical equipment like helmets.
 
+---
+
 ## Installation Guide
 
 ```bash
@@ -71,7 +77,7 @@ The requirements.txt file contains all necessary Python packages for this projec
 If you encounter issues with the installation, you can install the core dependencies manually:
 
 ```bash
-pip install ultralytics opencv-python torch torchvision
+pip install ultralytics opencv-python 
 ```
 
 ## Usage
@@ -89,6 +95,8 @@ To run detection on a video:
 cd scripts
 python detect_video.py
 ```
+
+---
 
 ## 📊 Dataset
 
@@ -113,6 +121,8 @@ This project uses the **"Hardhat + Vests"** dataset from Kaggle.
 This project uses free stock videos from Pexels for testing and demonstration purposes.  
 
 Please respect their [license terms](https://www.pexels.com/license/) when using this content.
+
+---
 
 ## 🔍 Extended Applications
 
